@@ -1,0 +1,23 @@
+.Container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.Header{
+    width: 10%;
+    background-color: blue;
+}
+
+.Main{
+    width: 90%;
+    background-color: green;
+}
+.Main-Section{
+    height: 100vh;
+    width: 100%;
+}
+.Main-Section_Principal{
+    background-image: url("../../Assets/Img/A1/Principal-Body_Image.webp");
+}

@@ -1,0 +1,32 @@
+body{
+    overflow-x: hidden;
+}
+
+.Main{
+
+}
+
+.Main-Aside{
+ height: 100vh;
+ background-color: aquamarine;
+ position: fixed;
+ width:15%;
+}
+
+.Main-Article{
+    height: 100%;
+    background-color: rgb(18, 148, 105);
+    width:85%;
+    margin-left:15%;
+}
+.Article-Presentation, .Article-Home, .Article-Integrantes, .Article-Whous, .Article-Productos, .Article-ContactUs{
+    height:100vh;
+}
+
+.Presentation-Text{
+    bottom:0;
+}
+
+.Home-Text{
+    width:40%;
+}
