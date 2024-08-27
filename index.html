@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Techno Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Style.css">
     <script src="https://kit.fontawesome.com/a8f0e274dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="d-flex Main">
@@ -17,109 +20,191 @@
             </div>
             <nav class="Aside-Nav">
                 <ul class="Nav-List">
-                    <li class="List-Element">Home</li>
-                    <li class="List-Element">Who are Us</li>
-                    <li class="List-Element">Galery</li>
-                    <li class="List-Element">Contact Us</li>
+                    <a href="#section1"><li class="List-Element">Presentation</li></a>
+                    <a href="#section2"><li class="List-Element">Home</li></a>
+                    <a href="#section3"><li class="List-Element">Members</li></a>
+                    <a href="#section4"><li class="List-Element">Who are Us</li></a>
+                    <a href="#section5"><li class="List-Element">Products</li></a>
+                    <a href="#section6"><li class="List-Element">Contact Us</li></a>
                 </ul>
             </nav>
             <div>
-                <img src="" alt="logo">
+                <p>©CopyRight by Dani.Dev</p>
             </div>
         </aside>
-        <article class="Main-Article">
+        <article id="section1" class="Main-Article">
             <section class="Article-Presentation">
                 <div class="Presentation-Text">
-                    <i class="fa-sharp fa-solid fa-arrow-down"></i><p>Contenido</p><i class="fa-sharp fa-solid fa-arrow-down"></i>
+                    <h1>Techno Shop</h1>
+                    <p>Una tienda de ventas de componentes y computadores.</p>
+                </div>
+                <div class="Presentation-Notice">
+                    <i class="fa-sharp fa-solid fa-arrow-down"></i><p>Contenido</p>
                 </div>
             </section>
 
-            <section class="Article-Home d-flex">
-                <!--Contenedor Isquierdo-->
+            <section id="section2" class="Article-Home d-flex">
                 <div class="flex-fill Home-Text">
                     <h1 class="text-center mt-5 mb-5">Bienvenido a Techno Shop</h1>
                     <p class="mt-5">
                         En Techno Shop, somos tu destino confiable para todo lo relacionado con componentes de computación. Desde procesadores y tarjetas gráficas hasta periféricos y accesorios, ofrecemos una amplia gama de productos de alta calidad para que encuentres exactamente lo que necesitas.
-                        
-                        Nuestro equipo está compuesto por expertos apasionados por la tecnología, listos para brindarte asesoría personalizada y soporte técnico. Ya sea que estés armando una nueva máquina, buscando una actualización o necesites ayuda con algún problema, en Techno Shop estamos aquí para ayudarte en cada paso del camino.
-                        
-                        Descubre nuestras ofertas, explora nuestros productos y experimenta la diferencia de trabajar con verdaderos profesionales. ¡Tu próxima gran compra en tecnología empieza aquí!</p>
+                    </p>
                 </div>
-                <!--Contenedor Derecho-->
-                <div class="flex-fill">
-                    <img src="Imagen.jpg" alt="Imagen de muestra de la empresa" class="Home-Img">
+                <div class="flex-fill Home-Img-Container">
+                    <img src="TechnoShop-Img.webp" alt="Imagen de muestra de la empresa" class="Home-Img">
                 </div>
             </section>
 
-            <section class="Article-Integrantes">
-                <h1>Integrantes</h1>
-                <p>En nuestra empresa hay una gran variedad de trabajadores !Y TU PUEDES SER UNO DE ELLOS! solo debes ingresar en este link de contacto y enviar una solicitud!</p>
-                <!-- Display flex justify center para los integrantes -->
-                <div>
-                    <i class="fa-solid fa-circle-user">Founder</i>
-                    <i class="fa-solid fa-circle-user">Co-Founder</i>
-                    <i class="fa-solid fa-circle-user">Ceo</i>
-                    <i class="fa-solid fa-circle-user">Manager</i>
+            <section id="section3" class="Article-Integrantes">
+                <h1 class="text-center">Integrantes</h1>
+                <p class="text-center">En Techno Shop, nuestro equipo está compuesto por profesionales dedicados que trabajan juntos para ofrecer las mejores soluciones tecnológicas. ¡Tú podrías ser el próximo en unirte a nosotros!</p>
+                
+                <div class="team-grid">
+                    <!-- Founder -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Founder</h4>
+                        <p>El visionario detrás de Techno Shop, encargado de definir la misión y visión de la empresa.</p>
+                    </div>
+            
+                    <!-- Co-Founder -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Co-Founder</h4>
+                        <p>Trabaja mano a mano con el fundador, aportando ideas y estrategias para el crecimiento de la empresa.</p>
+                    </div>
+            
+                    <!-- CEO -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>CEO</h4>
+                        <p>Dirige la compañía en sus decisiones estratégicas y se asegura de que todas las operaciones vayan acorde a los objetivos de Techno Shop.</p>
+                    </div>
+            
+                    <!-- Manager -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Manager</h4>
+                        <p>Responsable de gestionar los equipos y recursos, asegurando que todo funcione de manera eficiente.</p>
+                    </div>
+                    </div>
+                    <div class="team-grid">
+                    <!-- Developer -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Developer</h4>
+                        <p>Desarrolla las aplicaciones y tecnologías que permiten a Techno Shop ser líder en el mercado.</p>
+                    </div>
+            
+                    <!-- Designer -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Designer</h4>
+                        <p>Crea las interfaces visuales y experiencias de usuario para que nuestros clientes disfruten de productos de alta calidad.</p>
+                    </div>
+            
+                    <!-- Marketing -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Marketing</h4>
+                        <p>Se encarga de la promoción de nuestra marca y productos, asegurando que lleguen al público adecuado.</p>
+                    </div>
+            
+                    <!-- Customer Support -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Customer Support</h4>
+                        <p>Atiende a nuestros clientes y garantiza que tengan una excelente experiencia con nuestros productos y servicios.</p>
+                    </div>
+            
+                    <!-- Human Resources -->
+                    <div class="team-member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Human Resources</h4>
+                        <p>Gestiona el talento de la empresa, asegurando que Techno Shop cuente con un equipo motivado y capacitado.</p>
+                    </div>
                 </div>
             </section>
+            
 
-            <section class="Article-Whous">
+            <section id="section4" class="Article-Whous">
                 <h1>Sobre nosotros</h1>
-                <!-- carousel -->
-                <div id="demo" class="carousel slide" data-bs-ride="carousel">
-    
-                    <!-- Indicators/dots -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
                     <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                     </div>
-                  
-                    <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="la.jpg" alt="Los Angeles" class="d-block w-100">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="chicago.jpg" alt="Chicago" class="d-block w-100">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="ny.jpg" alt="New York" class="d-block w-100">
-                      </div>
+                    <div class="carousel-inner" style="height: 100%;">
+                        <div class="carousel-item active">
+                            <div class="d-flex" style="height: 100%;">
+                                <div class="text-center" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                                    <div>
+                                        <h1>Ekis amix Ekis</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem temporibus voluptatum itaque voluptate ut voluptates aliquam veniam eos sequi ipsa officia accusamus, at blanditiis explicabo provident nostrum quas nobis officiis.</p>
+                                    </div>
+                                </div>
+                                <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                                    <img src="whousimg.webp" alt="Los Angeles" class="carousel-img" style="max-width: 100%; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex" style="height: 100%;">
+                                <div class="text-center" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                                    <div>
+                                        <h1>Ekis amix Ekis</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem temporibus voluptatum itaque voluptate ut voluptates aliquam veniam eos sequi ipsa officia accusamus, at blanditiis explicabo provident nostrum quas nobis officiis.</p>
+                                    </div>
+                                </div>
+                                <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                                    <img src="whousimg.webp" alt="Los Angeles" class="carousel-img" style="max-width: 100%; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex" style="height: 100%;">
+                                <div class="text-center" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                                    <div>
+                                        <h1>Ekis amix Ekis</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem temporibus voluptatum itaque voluptate ut voluptates aliquam veniam eos sequi ipsa officia accusamus, at blanditiis explicabo provident nostrum quas nobis officiis.</p>
+                                    </div>
+                                </div>
+                                <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                                    <img src="whousimg.webp" alt="Los Angeles" class="carousel-img" style="max-width: 100%; height: auto;">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  
-                    <!-- Left and right controls/icons -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
+                        <span class="carousel-control-prev-icon"></span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                      <span class="carousel-control-next-icon"></span>
+                        <span class="carousel-control-next-icon"></span>
                     </button>
-                  </div>
+                </div>
             </section>
+            
 
-            <section class="Article-Productos">
+            <section id="section5" class="Article-Productos">
                 <h1>Productos</h1>
-                <!-- Container de los elementos en general -->
-                <div>
-                    <!-- Containers de 4 elementos cubicos -->
-                     <!-- Cada elemento tiene q llevar a otra pagina asi q iran con hrefs -->
-                    <div>
-                        <div>COMPONENTES</div>
-                        <div>PERIFERICOS</div>
-                        <div>PANTALLAS</div>
-                        <div>GABINETES</div>
+                <div class="Productos-Container">
+                    <div class="Container1">
+                        <div class="Producto-Item"><h3>COMPONENTES</h3></div>
+                        <div class="Producto-Item"><h3>PERIFERICOS</h3></div>
+                        <div class="Producto-Item"><h3>PANTALLAS</h3></div>
+                        <div class="Producto-Item"><h3>GABINETES</h3></div>
                     </div>
-                    <div>
-                        <div>LAPTOS</div>
-                        <div>COMPUTADORES</div>
-                        <div>LOT</div>
-                        <div>SIN ORDENAR</div>
+                    <div class="Container2">
+                        <div class="Producto-Item"><h3>LAPTOS</h3></div>
+                        <div class="Producto-Item"><h3>COMPUTADORES</h3></div>
+                        <div class="Producto-Item"><h3>LOT</h3></div>
+                        <div class="Producto-Item"><h3>SIN ORDENAR</h3></div>
                     </div>
                 </div>
             </section>
 
-            <section class="Article-ContactUs">
+            <section id="section6" class="Article-ContactUs">
                 <h1>Formulario de contacto</h1>
                 <form class="form">
                     <div class="row">
@@ -133,11 +218,12 @@
                         <input type="password" class="form-control" placeholder="Enter password" name="pswd">
                       </div>
                       <label for="comment" style="margin-top: 75px;">Comments:</label>
-                      <textarea class="form-control" rows="10" id="comment" name="text"></textarea> 
+                      <textarea class="form-control ms-5" rows="10" id="comment" name="text"></textarea> 
                     </div>
                   </form>
             </section>
         </article>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
