@@ -84,7 +84,8 @@ a{
 }
 
 .Productos-Container{
-    width: 100%;
+    margin-left:5%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -94,11 +95,22 @@ a{
     display: flex;
     justify-content: center;
 }
-.Producto-Item{
-    width: 30%;
-    border: 5px solid;
+.Producto-Item {
+    width: 25%;
+    border: 5px solid #ccc; /* Color del borde */
     height: 50%;
     padding: 10%;
+    margin: 10px; /* Espacio entre tarjetas */
+    background-color: #f9f9f9; /* Color de fondo inicial */
+    transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.Producto-Item:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta */
+    background-color: #e0e0e0; /* Cambia el color de fondo al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
 }
 
 .form-control{

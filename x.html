@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de marcado de sección actual</title>
+  <style>
+    .active {
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#seccion1" id="link-seccion1">Sección 1</a></li>
+        <li><a href="#seccion2" id="link-seccion2">Sección 2</a></li>
+        <li><a href="#seccion3" id="link-seccion3">Sección 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="seccion1">
+      <h2>Sección 1</h2>
+      <p>Contenido de la sección 1</p>
+    </section>
+
+    <section id="seccion2">
+      <h2>Sección 2</h2>
+      <p>Contenido de la sección 2</p>
+    </section>
+
+    <section id="seccion3">
+      <h2>Sección 3</h2>
+      <p>Contenido de la sección 3</p>
+    </section>
+  </main>
+
+  <script>
+    // Función para marcar la sección actual
+    function marcarSeccionActual() {
+      // Obtener la posición de desplazamiento actual
+      var posicionActual = window.pageYOffset;
+
+      // Determinar la sección actual
+      var seccion1 = document.getElementById('seccion1').offsetTop;
+      var seccion2 = document.getElementById('seccion2').offsetTop;
+      var seccion3 = document.getElementById('seccion3').offsetTop;
+
+      if (posicionActual < seccion2) {
+        var seccionActual = 'seccion1';
+      } else if (posicionActual < seccion3) {
+        var seccionActual = 'seccion2';
+      } else {
+        var seccionActual = 'seccion3';
+      }
+
+      // Seleccionar el elemento del encabezado correspondiente
+      var linkActual = document.getElementById('link-' + seccionActual);
+
+      // Aplicar la clase 'active' al elemento seleccionado
+      var links = document.querySelectorAll('nav a');
+      for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove('active');
+      }
+      linkActual.classList.add('active');
+    }
+
+    // Llamar a la función cuando se desplace la página
+    window.addEventListener('scroll', marcarSeccionActual);
+  </script>
+</body>
+</html>
