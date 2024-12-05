@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdAgency Campaign Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-indigo-800 mb-2">AdAgency Campaign Manager</h1>
+            <p class="text-gray-600">Manage your advertising campaigns with ease</p>
+        </header>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold mb-4 text-indigo-700">Add New Campaign</h2>
+                <form id="addForm" class="space-y-4">
+                    <div>
+                        <label for="campaign_name" class="block text-sm font-medium text-gray-700">Campaign Name</label>
+                        <input type="text" id="campaign_name" name="campaign_name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="budget" class="block text-sm font-medium text-gray-700">Budget</label>
+                        <input type="number" id="budget" name="budget" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="client" class="block text-sm font-medium text-gray-700">Client</label>
+                        <input type="text" id="client" name="client" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        Add Campaign
+                    </button>
+                </form>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold mb-4 text-indigo-700">Update Campaign</h2>
+                <form id="updateForm" class="space-y-4">
+                    <div>
+                        <label for="update_id" class="block text-sm font-medium text-gray-700">Campaign ID</label>
+                        <input type="number" id="update_id" name="update_id" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="update_campaign_name" class="block text-sm font-medium text-gray-700">New Campaign Name</label>
+                        <input type="text" id="update_campaign_name" name="update_campaign_name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="update_budget" class="block text-sm font-medium text-gray-700">New Budget</label>
+                        <input type="number" id="update_budget" name="update_budget" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="update_client" class="block text-sm font-medium text-gray-700">New Client</label>
+                        <input type="text" id="update_client" name="update_client" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </div>
+                    <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        Update Campaign
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-8 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-700">Delete Campaign</h2>
+            <form id="deleteForm" class="space-y-4">
+                <div>
+                    <label for="delete_id" class="block text-sm font-medium text-gray-700">Campaign ID</label>
+                    <input type="number" id="delete_id" name="delete_id" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    Delete Campaign
+                </button>
+            </form>
+        </div>
+
+        <div class="mt-8 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-700">Campaign List</h2>
+            <div id="campaignList" class="space-y-4"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
